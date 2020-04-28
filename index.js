@@ -37,9 +37,15 @@ const options = {
 const swaggerSpec = swaggerJsDoc(options);
 app.use('/api-docs',swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+
+
 //Routes
 const api = require('./controller/api');
-app.use('/api',api);
+const register = require('./controller/register.js');
+const login = require('./controller/login');
+app.use('/api', api);
+app.use('/login',login);
+app.use('/register',register);
 
 //Server 
 const   PORT = process.env.PORT || 3000;
