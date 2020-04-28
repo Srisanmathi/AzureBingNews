@@ -9,7 +9,7 @@ The Bing News Search API uses Bing's search capabilities to get news articles fr
 - News according to category
 - References
 ## Base URL
-http://localhost:3000
+http://174.138.61.156:3000
 
 ## Register
 This API creates a new account for the user. 
@@ -228,8 +228,11 @@ The following are the required parameters that a request must include in the hea
 
     {
     "_type": "News",
+
     "webSearchUrl": "https://www.bing.com/news/search?q=entertainment+news&form=TNSA02",
+
     "value": [
+
         {
             "name": "Bennifer's 'Jersey Girl' daughter, child actress Raquel Castro, is all grown up on 'Songland'",
             "url": "https://www.yahoo.com/entertainment/bennifers-jersey-girl-daughter-child-actress-raquel-castro-is-all-grown-up-on-songland-030644183.html",
@@ -240,7 +243,9 @@ The following are the required parameters that a request must include in the hea
                     "height": 560
                 }
             },
+
             "description": "When Castro’s acting career didn’t take off as she’d hoped, she struggled mentally and emotionally — until music saved her.",
+
             "about": [
                 {
                     "readLink": "https://api.cognitive.microsoft.com/api/v7/entities/ee60bfe9-910a-f470-ab85-bac7fab6ce31",
